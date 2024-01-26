@@ -27,7 +27,9 @@
     "pg": "^8.11.3",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.1",
-    "typeorm": "^0.3.19"
+    "socket.io-client": "^4.7.4",
+    "typeorm": "^0.3.19",
+    "ws": "^8.16.0"
   },
   "devDependencies": {
     "@nestjs/cli": "^10.0.0",
@@ -37,6 +39,7 @@
     "@types/jest": "^29.5.2",
     "@types/node": "^20.3.1",
     "@types/supertest": "^6.0.0",
+    "@types/ws": "^8.5.10",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
     "eslint": "^8.42.0",
