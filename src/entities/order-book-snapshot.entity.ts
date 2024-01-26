@@ -1,4 +1,4 @@
-import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn } from 'typeorm';
+import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
 
 @Entity('order_book_snapshots')
 export class OrderBookSnapshot {
@@ -14,8 +14,8 @@ export class OrderBookSnapshot {
     @Column('jsonb')
     bids: any; // JSONBデータ型を使用して、すべてのbidsを保存
 
-    @CreateDateColumn({ type: 'timestamp with time zone' })
-    timestamp: Date;
+    @Column('bigint')
+    timestamp: number;
 
     @Column('bigint')
     sequence_id: string;
