@@ -9,7 +9,8 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 
 
 @Module({
-  imports: [DataSourceModule,
+  imports: [
+    DataSourceModule,
     TypeOrmModule.forFeature([OrderBookDiff]),
     TypeOrmModule.forFeature([OrderBookSnapshot]),
   ],
