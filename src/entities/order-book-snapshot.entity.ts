@@ -15,7 +15,7 @@ export class OrderBookSnapshot {
     bids: any; // JSONBデータ型を使用して、すべてのbidsを保存
 
     @Column('bigint')
-    timestamp: number;
+    timestamp: string;
 
     @Column('bigint')
     sequence_id: string;
