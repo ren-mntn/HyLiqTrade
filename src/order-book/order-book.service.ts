@@ -11,7 +11,7 @@ interface OrderBookSnapShotData {
         'data': {
             'asks': string[][];
             'bids': string[][];
-            'timestamp': number;
+            'timestamp': string;
             'sequenceId': string;
             'asks_over': string;
             'bids_under': string;
@@ -25,7 +25,7 @@ interface OrderBookDiffData {
         'data': {
             'a': string[][];
             'b': string[][];
-            't': number;
+            't': string;
             's': string;
             'ao': string;
             'bu': string;
