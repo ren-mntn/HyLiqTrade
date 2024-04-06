@@ -1,0 +1,34 @@
+/* PositionsList.css */
+.positions-table {
+    width: 100%; /* テーブルの幅をコンテナに合わせる */
+    border-collapse: collapse; /* セルの境界線を合わせる */
+}
+
+.positions-table th,
+.positions-table td {
+    border: 1px solid #ddd; /* セルの境界線スタイル */
+    padding: 8px; /* セルのパディング */
+    text-align: left; /* テキストを左揃え */
+}
+
+.positions-table th {
+    background-color: #f2f2f2; /* ヘッダーの背景色 */
+}
+
+.positive {
+    color: green;
+}
+
+.negative {
+    color: red;
+}
+
+.selected-row {
+  background-color: #f2f2f2; /* 選択された行の背景色を灰色に設定 */
+}
+
+.positions-container {
+  max-height: 300px; /* 例として400pxの高さを設定 */
+  overflow-y: auto; /* 縦方向にスクロールバーを表示 */
+  margin-bottom: 1rem; /* 下部に余白を設定 */
+}
